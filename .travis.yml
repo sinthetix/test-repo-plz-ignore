@@ -1,0 +1,6 @@
+sudo: false
+language: ruby
+script:
+  - ruby -e 'sleep(5 * 60)'
+after_script:
+  - echo $PATH
