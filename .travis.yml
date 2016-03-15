@@ -3,4 +3,5 @@ language: python
 python:
 - 3.4
 before_script:
-- pip install --upgrade python
+- pyenv install 3.4.4
+- pyenv global 3.4.4
