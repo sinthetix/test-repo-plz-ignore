@@ -1,4 +1,4 @@
 sudo: false
-language: python
+language: php
 install:
-- pip install --upgrade pip
+- composer install --prefer-source --no-interaction
