@@ -6,3 +6,6 @@ before_install:
 - export CXX=clang-omp++
 - export SOUFFLECPP=/usr/local/bin/cpp-4.8
 - export BISON=/usr/local//Cellar/bison/3.0.2/bin/bison
+compiler:
+- gcc
+- clang
