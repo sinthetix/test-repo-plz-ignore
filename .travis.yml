@@ -1,5 +1,8 @@
 language: objective-c
 before_install:
 - brew update
-- brew install clang-omp
+- brew install clang-omp bison
 - brew reinstall gcc --without-multilib
+- export CXX=clang-omp++
+- export SOUFFLECPP=/usr/local/bin/cpp-4.8
+- export BISON=/usr/local//Cellar/bison/3.0.2/bin/bison
