@@ -1,7 +1,6 @@
-language: objective-c
-before_install:
-- brew update
-- brew install bison
+language: java
+before_script:
+- nvm install 10.4
+- nvm use 10.4
 script:
-- gem environment
-- gem which bison
+- npm install
