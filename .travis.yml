@@ -1,6 +1,6 @@
 language: java
 before_script:
-- nvm install 10.4
-- nvm use 10.4
+- nvm install 10.40
+- nvm use 10.40
 script:
 - npm install
