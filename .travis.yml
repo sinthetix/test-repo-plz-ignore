@@ -1,7 +1,5 @@
-sudo: false
-language: python
-python:
-- 3.4
-before_script:
-- pyenv install 3.4.4
-- pyenv global 3.4.4
+language: objective-c
+before_install:
+- brew update
+- brew install clang-omp
+- brew reinstall gcc --without-multilib
