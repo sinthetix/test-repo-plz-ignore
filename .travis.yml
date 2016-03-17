@@ -1,8 +1,2 @@
-language: java
-before_script:
-- nvm install 5.0
-- nvm use 5.0
-script:
-- git clone https://github.com/Pearson-Higher-Ed/app-header.git
-- cd app-header
-- npm install
+sudo: required
+language: elixir
