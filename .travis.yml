@@ -12,4 +12,4 @@ before_install:
 - npm install -g npm@2.14.5
 - npm install -g cordova ionic
 - brew install android-sdk
-- android update sdk --no-ui -a --filter 142
+- android update sdk --no-ui -a
