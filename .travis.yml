@@ -1,8 +1,15 @@
-sudo: required
-dist: trusty
-language: erlang
+language: objective-c
+cache:
+directories:
+- node_modules
+- /usr/local/lib/node_modules/
+- /home/travis/android-sdk-linux/
+- /home/travis/.nvm/
+os: osx
+osx_image: xcode7
 before_install:
-- wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
-- sudo apt-get update
-- sudo apt-get install -y esl-erlang
-- sudo apt-get install -y elixir
+- export LANG=en_US.UTF-8
+- npm install -g npm@2.14.5
+- npm install -g cordova ionic
+- brew install android-sdk
+- android update sdk --no-ui -a --filter 142
