@@ -3,4 +3,5 @@ dist: trusty
 language: erlang
 before_install:
 - \curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
+- echo "test -s '$HOME/.kiex/scripts/kiex' && source '$HOME/.kiex/scripts/kiex'" >> ~/.bashrc
 - kiex install elixir
