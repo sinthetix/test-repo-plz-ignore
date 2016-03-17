@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode7
 before_install:
 - brew install android-sdk
-- echo "y" | android update sdk --no-ui -a
+- ( sleep 5 && while [ 1 ]; do sleep 1; echo y; done ) | android update sdk --no-ui -a
