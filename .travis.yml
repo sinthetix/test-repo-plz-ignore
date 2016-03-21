@@ -1,5 +1,2 @@
-sudo: required
-language: generic
-dist: trusty
-services:
-- docker
+language: csharp
+solution: solution-name.sln
