@@ -4,6 +4,7 @@ sudo: false
 services:
 - postgres
 - docker
+- redis
 
 addons:
   postgresql: 9.3
@@ -11,3 +12,4 @@ addons:
 before_script:
 - psql --version
 - docker info
+- redis-server --version
