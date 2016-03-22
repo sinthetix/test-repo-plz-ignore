@@ -1,9 +1,8 @@
-language: ruby
+language: generic
 sudo: false
 
 services:
 - postgres
-- redis
 - docker
 
 addons:
@@ -11,5 +10,4 @@ addons:
 
 before_script:
 - psql --version
-- redis-server --version
 - docker info
