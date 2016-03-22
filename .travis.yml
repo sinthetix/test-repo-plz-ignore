@@ -1,4 +1,15 @@
 sudo: required
-dist: trusty
-language: csharp
-solution: solution-name.sln
+language: generic
+
+services:
+- docker
+- redis-server
+- postgresql
+
+addons:
+  postgresql: "9.3"
+
+before_script:
+- docker info
+- psql --version
+- redis-server --version
