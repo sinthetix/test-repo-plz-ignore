@@ -1,5 +1,9 @@
 language: generic
-sudo: required
+sudo: false
+
+services:
+- redis
+- docker
 
 addons:
   postgresql: 9.3
