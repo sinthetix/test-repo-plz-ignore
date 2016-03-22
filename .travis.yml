@@ -2,9 +2,9 @@ language: generic
 sudo: false
 
 addons:
-postgresql: 9.3
+  postgresql: 9.3
 
 before_script:
-- docker info
 - psql --version
 - redis-server --version
+- docker info
