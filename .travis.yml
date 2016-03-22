@@ -1,7 +1,8 @@
-language: generic
+language: ruby
 sudo: false
 
 services:
+- postgres
 - redis
 - docker
 
