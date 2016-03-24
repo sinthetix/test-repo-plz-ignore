@@ -1,15 +1,3 @@
-language: generic
-sudo: false
-
-services:
-- postgres
-- docker
-- redis
-
-addons:
-  postgresql: 9.3
-
-before_script:
-- psql --version
-- docker info
-- redis-server --version
+language: objective-c
+before-script:
+- gcc --version
