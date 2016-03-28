@@ -1,3 +1,5 @@
-language: ruby
+language: generic
 sudo: required
 dist: trusty
+script:
+- echo 'I pass!'
