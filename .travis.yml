@@ -1,6 +1,10 @@
 sudo: required
-language: node_js
+language: python
 dist: trusty
-script:
+before_script:
 - ruby -v
 - rvm list
+rvm:
+- 2.2
+python:
+- pypy
