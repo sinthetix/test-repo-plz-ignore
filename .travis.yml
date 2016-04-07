@@ -1,5 +1,5 @@
 language: ruby
 rvm:
   - ruby-head
-before_install:
+install:
   - brew install coreutils
