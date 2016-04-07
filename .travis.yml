@@ -6,6 +6,6 @@ script:
 - rvm list
 - python --version
 rvm:
-- 2.3
+- 1.9
 python:
 - pypy3
