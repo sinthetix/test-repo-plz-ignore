@@ -1,10 +1,10 @@
 sudo: required
 language: python
 dist: trusty
-before_script:
+script:
 - ruby -v
 - rvm list
 rvm:
-- 2.2
+- 2.3
 python:
-- pypy
+- pypy3
