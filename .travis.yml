@@ -1,5 +1,6 @@
-language: ruby
-rvm:
-  - ruby-head
-install:
-  - brew install coreutils
+language: python
+sudo: required
+dist: trusty
+before_script:
+  - rvm install 2.3.0
+  - rvm use 2.3.0
