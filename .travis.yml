@@ -1,3 +1,5 @@
 language: ruby
-before_script:
-  - bundle exec rackup private_pub.ru -s thin -E production
+rvm:
+  - ruby-head
+before_install:
+  - brew install coreutils
