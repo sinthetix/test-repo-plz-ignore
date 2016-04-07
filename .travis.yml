@@ -1,9 +1,10 @@
 sudo: required
-language: python
+language: ruby
 dist: trusty
 script:
 - ruby -v
 - rvm list
+- python --version
 rvm:
 - 2.3
 python:
