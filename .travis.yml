@@ -1,4 +1,7 @@
-language: objective-c
-osx_image: xcode7.3
+language: scala
+scala: 2.11.7
+jdk:
+- oraclejdk8
 before_install:
-- df -h
+- nvm install 5.0
+- nvm use 5.0
