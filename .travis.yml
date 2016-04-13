@@ -3,4 +3,4 @@ scala: 2.11.7
 jdk:
 - oraclejdk8
 before_install:
-- nvm which
+- nvm use 5.0
