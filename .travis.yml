@@ -1,7 +1,10 @@
-language: scala
-scala: 2.11.7
-jdk:
-- oraclejdk8
-before_install:
-- nvm install 5.0
-- nvm use 5.0
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+      language: ruby
+    - os: linux
+      dist: trusty
+      sudo: required
+      language: generic
